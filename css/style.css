@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	padding: 20px;
+	margin: 0px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a3b1ba), to(#eaf0f3)) fixed;
+	font-size: 12px
+}
+header {
+	text-align: left;
+	padding-bottom: 20px
+}
+
+.grid-container {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+}
+.box {
+	background-color: #fff;
+	margin-bottom: 15px;
+}
+.Box {
+	padding: 10px;
+	color: #fff;
+	border-radius: 5px;
+	margin-bottom: 15px
+}
+.ProductTxt {
+	padding-bottom: 10px;
+	line-height: 20px;
+	background-color: #fff;
+	margin-bottom: 20px;
+	padding: 5px;
+	font-size: 12px;
+	height: 320px;
+	text-align: center;
+	color: #010101
+}
+.OldTxt {
+	text-decoration: line-through;
+	padding-right: 20px;
+	color: #e71f40
+}
+.show {
+	display: block
+}
+.col-form-label, .custom-select {
+	font-size: 12px
+}
+.custom-select {
+height: calc(2.25rem + -7px);
+}
+.rangemin {
+	left: 0px;
+	top: 50px;
+	position: absolute;
+}
+.rangemax {
+	left: 100px;
+	top: 50px;
+	position: absolute;
+}
+.card {
+	margin-bottom: 15px
+}
+.btn-link, .btn:not(:disabled):not(.disabled) {
+	color: #010101;
+	text-decoration: none
+}
+.ui-slider .ui-slider-handle {
+	background-color: #2d303c;
+	border-radius: 50%;
+	border-color: #2d303c;
+}
+.min {
+	position: absolute;
+	left: 0px;
+}
+.max {
+	position: absolute;
+	left: 100px;
+}
+.form-control-file, .form-control-range {
+	width: 60%
+}
+li {
+	list-style: none;
+}
+hr {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.bgpink {
+	background-color: #ff4259;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	height: 100%;
+	overflow: auto;
+}
+.custom-select {
+	width: 100%; font-size:11px
+}
+.Pagination {
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 12px
+}
+.btn{ padding:0px; font-size:14px} 
+@media (max-width: 800px) {
+.filter{ display: none;}
+.col-sm-9{ max-width: 100%;flex: 100%;}
+}

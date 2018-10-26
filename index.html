@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta
+name="description" content="Shop all Diapering Essentials online at Dumyah.com  carrying a huge selection of diaper bags,rash cream, diapers, wipes,changing mats, nappy disposal system to Wipes Pouches and our range of Eco friendly all natural products from top brands like Bambo, Amina's, Huggies, Fine, Chicco,Skip Hop, Johnson's, Tommee Tippee and Dr Brown's
+Cash on delivery" />
+<title>Dumyah</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-grid.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/javascript.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+</head>
+
+<body onload="displayObjects()">
+<header>
+  <h1>
+  <img src="images/logo.png" width="300" height="40" alt="Dumyah logo" />
+  </h1>
+</header>
+<div  >
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> SHOP BY PRICE </button>
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body"> <span class="rangeValues"></span>
+              <input   value="50" min="0" max="120" step="5" type="range" id="price_lte" name="price_lte" onchange="displayObjects()" style="width:100%">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> SHOP BY BRAND </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              <input style=" width:100%" type="text" name="name" id="name_input" list="huge_list" onchange="displayObjects()">
+              <datalist id="huge_list"> </datalist>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> GENDER </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="form-check">
+                <form action="">
+                  <input type="radio"  id="boys" name="gender" value="boys" onchange="displayObjects();"/>
+                  boys<br />
+                  <input type="radio"  id="girls" name="gender" value="girls" onchange="displayObjects();"/>
+                  girls<br />
+                  <input type="radio"  id="both" name="gender" value="both" onchange="displayObjects();"/>
+                  both
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-9">
+      <div class="Box">
+        <form action="" class="bgpink">
+          <div class="col-sm-3" style="float:left">
+            <label for="inputPassword">Show:</label>
+            <select class="custom-select" id="_limit" name="_limit" onchange="displayObjects()">
+              <option value="10" selected>10</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+            </select>
+          </div>
+          <div class="col-sm-3" style="float:left">
+            <label for="inputPassword">sort by:</label>
+            <select class="custom-select" id="_sort" name="_sort" onchange="displayObjects();">
+              <option value="views&_order=asc" selected>views asc</option>
+              <option value="views&_order=desc">views desc</option>
+              <option value="rating&_order=asc">Rating (low-high)</option>
+              <option value="rating&_order=desc">Rating (high-low)</option>
+              <option value="price&_order=asc">Price (low-high)</option>
+              <option value="price&_order=desc">Price (high-low)</option>
+            </select>
+          </div>
+        </form>
+        <br>
+        <div id="txtHint" class="grid-container">Customer info will be listed here...</div>
+      </div>
+      <div class="Pagination"> <a href="javascript:void(0);" onclick="currentPageIndex = 1;displayObjects();" >First</a> <a href="javascript:void(0);" onclick="currentPageIndex = 2;displayObjects();" >2</a> <a href="javascript:void(0);" onclick="currentPageIndex = 3;displayObjects();" >3</a> <a href="javascript:void(0);" onclick="currentPageIndex++;displayObjects();" >Next</a> </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
